@@ -19,12 +19,14 @@ services:
       timeout: 5s
       retries: 5
     restart: unless-stopped
+    networks:
+      - repair_network
 
   go-server:
     build: ./go-server
     container_name: repair_planner_server
     ports:
-      - "8080:8080"
+      - "${TCP_PORT}:8080"
     environment:
       DB_HOST: postgres
       DB_PORT: 5432
@@ -36,3 +38,9 @@ services:
       postgres:
         condition: service_healthy
     restart: unless-stopped
+    networks:
+      - repair_network
+
+networks:
+  repair_network:
+    driver: bridge

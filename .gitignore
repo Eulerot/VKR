@@ -1,0 +1,36 @@
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# PostgreSQL data
+postgres/data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Qt build artifacts
+qt-app/build/
+qt-app/.qtc*/
+qt-app/*.user
+qt-app/*.autosave
+
+# Logs
+*.log
+
+# Environment
+.env.local
+.env.*.local

@@ -1,0 +1,1 @@
+{"action":"monthly_repair_plan.upsert","payload":{"request_id":"REQ-01","machine_id":"EX200","model":"Hitachi","repair_type":"капремонт","required_specialization":"слесарь","required_qualification":5,"planned_start_date":"2025-06-01","planned_end_date":"2025-06-02","labor_hours":40,"priority_weight":10,"readiness_status":"готова","notes":""}}
